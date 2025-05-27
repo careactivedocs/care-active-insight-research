@@ -1,0 +1,2397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <n>Care Active Scan Locations</n>
+    <description>GPS locations from scan data</description>
+    
+    <!-- Styles for different reason codes -->
+    <Style id="reasonCode0">
+      <IconStyle>
+        <color>ff0000ff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="reasonCode1">
+      <IconStyle>
+        <color>ff00ff00</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="reasonCode2">
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="reasonCodeDefault">
+      <IconStyle>
+        <color>ffffff00</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T09:07:16+08:00<br/>
+        <strong>Longtitude:</strong> 121.601640<br/>
+        <strong>Latitude:</strong> 24.033405<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.601640,24.033405,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T09:07:16+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T09:17:28+08:00<br/>
+        <strong>Longtitude:</strong> 121.653013<br/>
+        <strong>Latitude:</strong> 24.150968<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.653013,24.150968,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T09:17:28+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T09:27:48+08:00<br/>
+        <strong>Longtitude:</strong> 121.653013<br/>
+        <strong>Latitude:</strong> 24.150968<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.653013,24.150968,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T09:27:48+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T09:38:01+08:00<br/>
+        <strong>Longtitude:</strong> 121.772225<br/>
+        <strong>Latitude:</strong> 24.345750<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.772225,24.345750,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T09:38:01+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T09:48:24+08:00<br/>
+        <strong>Longtitude:</strong> 121.780670<br/>
+        <strong>Latitude:</strong> 24.439185<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.780670,24.439185,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T09:48:24+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T09:58:40+08:00<br/>
+        <strong>Longtitude:</strong> 121.827561<br/>
+        <strong>Latitude:</strong> 24.607763<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.827561,24.607763,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T09:58:40+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T10:08:44+08:00<br/>
+        <strong>Longtitude:</strong> 121.811040<br/>
+        <strong>Latitude:</strong> 24.616264<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.811040,24.616264,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T10:08:44+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T10:18:59+08:00<br/>
+        <strong>Longtitude:</strong> 121.774571<br/>
+        <strong>Latitude:</strong> 24.677535<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.774571,24.677535,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T10:18:59+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T10:29:20+08:00<br/>
+        <strong>Longtitude:</strong> 121.758281<br/>
+        <strong>Latitude:</strong> 24.754890<br/>
+        <strong>GPS Accuracy:</strong> 51 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.758281,24.754890,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T10:29:20+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T10:39:33+08:00<br/>
+        <strong>Longtitude:</strong> 121.820036<br/>
+        <strong>Latitude:</strong> 24.855041<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.820036,24.855041,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T10:39:33+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T10:49:48+08:00<br/>
+        <strong>Longtitude:</strong> 121.840161<br/>
+        <strong>Latitude:</strong> 24.877199<br/>
+        <strong>GPS Accuracy:</strong> 71 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.840161,24.877199,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T10:49:48+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T11:00:04+08:00<br/>
+        <strong>Longtitude:</strong> 121.951970<br/>
+        <strong>Latitude:</strong> 25.012487<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.951970,25.012487,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T11:00:04+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T11:10:23+08:00<br/>
+        <strong>Longtitude:</strong> 121.852219<br/>
+        <strong>Latitude:</strong> 25.058076<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.852219,25.058076,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T11:10:23+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T11:30:52+08:00<br/>
+        <strong>Longtitude:</strong> 121.645425<br/>
+        <strong>Latitude:</strong> 25.061717<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.645425,25.061717,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T11:30:52+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T11:41:06+08:00<br/>
+        <strong>Longtitude:</strong> 121.578880<br/>
+        <strong>Latitude:</strong> 25.049244<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.578880,25.049244,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T11:41:06+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T11:51:34+08:00<br/>
+        <strong>Longtitude:</strong> 121.518346<br/>
+        <strong>Latitude:</strong> 25.047694<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.518346,25.047694,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T11:51:34+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:01:46+08:00<br/>
+        <strong>Longtitude:</strong> 121.517025<br/>
+        <strong>Latitude:</strong> 25.046000<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517025,25.046000,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:01:46+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:01:48+08:00<br/>
+        <strong>Longtitude:</strong> 121.516871<br/>
+        <strong>Latitude:</strong> 25.046188<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516871,25.046188,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:01:48+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:12:11+08:00<br/>
+        <strong>Longtitude:</strong> 121.516986<br/>
+        <strong>Latitude:</strong> 25.046091<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516986,25.046091,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:12:11+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:12:13+08:00<br/>
+        <strong>Longtitude:</strong> 121.516967<br/>
+        <strong>Latitude:</strong> 25.046094<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516967,25.046094,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:12:13+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:22:26+08:00<br/>
+        <strong>Longtitude:</strong> 121.516992<br/>
+        <strong>Latitude:</strong> 25.046063<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516992,25.046063,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:22:26+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:22:27+08:00<br/>
+        <strong>Longtitude:</strong> 121.516921<br/>
+        <strong>Latitude:</strong> 25.046125<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516921,25.046125,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:22:27+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:32:37+08:00<br/>
+        <strong>Longtitude:</strong> 121.516991<br/>
+        <strong>Latitude:</strong> 25.046059<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516991,25.046059,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:32:37+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T12:53:22+08:00<br/>
+        <strong>Longtitude:</strong> 121.516971<br/>
+        <strong>Latitude:</strong> 25.046078<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516971,25.046078,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T12:53:22+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:03:25+08:00<br/>
+        <strong>Longtitude:</strong> 121.516974<br/>
+        <strong>Latitude:</strong> 25.046081<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516974,25.046081,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:03:25+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:13:42+08:00<br/>
+        <strong>Longtitude:</strong> 121.517001<br/>
+        <strong>Latitude:</strong> 25.046028<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517001,25.046028,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:13:42+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:13:45+08:00<br/>
+        <strong>Longtitude:</strong> 121.517013<br/>
+        <strong>Latitude:</strong> 25.046012<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517013,25.046012,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:13:45+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:24:00+08:00<br/>
+        <strong>Longtitude:</strong> 121.517030<br/>
+        <strong>Latitude:</strong> 25.045965<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517030,25.045965,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:24:00+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:24:04+08:00<br/>
+        <strong>Longtitude:</strong> 121.516980<br/>
+        <strong>Latitude:</strong> 25.046050<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516980,25.046050,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:24:04+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:34:18+08:00<br/>
+        <strong>Longtitude:</strong> 121.516972<br/>
+        <strong>Latitude:</strong> 25.046076<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516972,25.046076,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:34:18+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:44:28+08:00<br/>
+        <strong>Longtitude:</strong> 121.516970<br/>
+        <strong>Latitude:</strong> 25.046065<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516970,25.046065,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:44:28+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:44:33+08:00<br/>
+        <strong>Longtitude:</strong> 121.517075<br/>
+        <strong>Latitude:</strong> 25.045810<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517075,25.045810,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:44:33+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T13:54:50+08:00<br/>
+        <strong>Longtitude:</strong> 121.517090<br/>
+        <strong>Latitude:</strong> 25.045793<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517090,25.045793,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T13:54:50+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:05:00+08:00<br/>
+        <strong>Longtitude:</strong> 121.517075<br/>
+        <strong>Latitude:</strong> 25.045822<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517075,25.045822,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:05:00+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:05:00+08:00<br/>
+        <strong>Longtitude:</strong> 121.517018<br/>
+        <strong>Latitude:</strong> 25.046017<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517018,25.046017,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:05:00+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:15:24+08:00<br/>
+        <strong>Longtitude:</strong> 121.517092<br/>
+        <strong>Latitude:</strong> 25.045819<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517092,25.045819,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:15:24+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:25:32+08:00<br/>
+        <strong>Longtitude:</strong> 121.517041<br/>
+        <strong>Latitude:</strong> 25.045989<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Shinru iphone<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517041,25.045989,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:25:32+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:25:34+08:00<br/>
+        <strong>Longtitude:</strong> 121.517084<br/>
+        <strong>Latitude:</strong> 25.045861<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517084,25.045861,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:25:34+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:35:50+08:00<br/>
+        <strong>Longtitude:</strong> 121.517019<br/>
+        <strong>Latitude:</strong> 25.045934<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517019,25.045934,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:35:50+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T14:56:28+08:00<br/>
+        <strong>Longtitude:</strong> 121.517078<br/>
+        <strong>Latitude:</strong> 25.045954<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517078,25.045954,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T14:56:28+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T15:06:43+08:00<br/>
+        <strong>Longtitude:</strong> 121.517098<br/>
+        <strong>Latitude:</strong> 25.045777<br/>
+        <strong>GPS Accuracy:</strong> 36 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517098,25.045777,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T15:06:43+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T15:16:55+08:00<br/>
+        <strong>Longtitude:</strong> 121.516954<br/>
+        <strong>Latitude:</strong> 25.046149<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516954,25.046149,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T15:16:55+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T15:27:20+08:00<br/>
+        <strong>Longtitude:</strong> 121.516955<br/>
+        <strong>Latitude:</strong> 25.046087<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.516955,25.046087,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T15:27:20+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T15:47:59+08:00<br/>
+        <strong>Longtitude:</strong> 121.517989<br/>
+        <strong>Latitude:</strong> 25.049355<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517989,25.049355,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T15:47:59+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T15:58:11+08:00<br/>
+        <strong>Longtitude:</strong> 121.518639<br/>
+        <strong>Latitude:</strong> 25.048759<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.518639,25.048759,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T15:58:11+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T16:08:22+08:00<br/>
+        <strong>Longtitude:</strong> 121.522585<br/>
+        <strong>Latitude:</strong> 25.049715<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.522585,25.049715,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T16:08:22+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T16:29:01+08:00<br/>
+        <strong>Longtitude:</strong> 121.523433<br/>
+        <strong>Latitude:</strong> 25.049423<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.523433,25.049423,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T16:29:01+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T16:59:54+08:00<br/>
+        <strong>Longtitude:</strong> 121.523466<br/>
+        <strong>Latitude:</strong> 25.049421<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.523466,25.049421,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T16:59:54+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T17:09:58+08:00<br/>
+        <strong>Longtitude:</strong> 121.525493<br/>
+        <strong>Latitude:</strong> 25.050222<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525493,25.050222,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T17:09:58+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T17:30:30+08:00<br/>
+        <strong>Longtitude:</strong> 121.525470<br/>
+        <strong>Latitude:</strong> 25.051071<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525470,25.051071,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T17:30:30+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T17:40:54+08:00<br/>
+        <strong>Longtitude:</strong> 121.525511<br/>
+        <strong>Latitude:</strong> 25.051067<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525511,25.051067,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T17:40:54+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T17:51:06+08:00<br/>
+        <strong>Longtitude:</strong> 121.525519<br/>
+        <strong>Latitude:</strong> 25.051080<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525519,25.051080,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T17:51:06+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T18:01:22+08:00<br/>
+        <strong>Longtitude:</strong> 121.525554<br/>
+        <strong>Latitude:</strong> 25.051025<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525554,25.051025,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T18:01:22+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T18:11:39+08:00<br/>
+        <strong>Longtitude:</strong> 121.524944<br/>
+        <strong>Latitude:</strong> 25.050396<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.524944,25.050396,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T18:11:39+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T18:32:05+08:00<br/>
+        <strong>Longtitude:</strong> 121.517899<br/>
+        <strong>Latitude:</strong> 25.048110<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517899,25.048110,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T18:32:05+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T18:42:36+08:00<br/>
+        <strong>Longtitude:</strong> 121.517457<br/>
+        <strong>Latitude:</strong> 25.048302<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517457,25.048302,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T18:42:36+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T19:44:17+08:00<br/>
+        <strong>Longtitude:</strong> 121.519343<br/>
+        <strong>Latitude:</strong> 25.049162<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.519343,25.049162,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T19:44:17+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T19:54:33+08:00<br/>
+        <strong>Longtitude:</strong> 121.520904<br/>
+        <strong>Latitude:</strong> 25.055775<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.520904,25.055775,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T19:54:33+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T20:04:50+08:00<br/>
+        <strong>Longtitude:</strong> 121.520558<br/>
+        <strong>Latitude:</strong> 25.054811<br/>
+        <strong>GPS Accuracy:</strong> 40 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.520558,25.054811,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T20:04:50+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T20:14:58+08:00<br/>
+        <strong>Longtitude:</strong> 121.520574<br/>
+        <strong>Latitude:</strong> 25.052054<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.520574,25.052054,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T20:14:58+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T20:35:34+08:00<br/>
+        <strong>Longtitude:</strong> 121.521470<br/>
+        <strong>Latitude:</strong> 25.049925<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.521470,25.049925,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T20:35:34+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T20:45:49+08:00<br/>
+        <strong>Longtitude:</strong> 121.520767<br/>
+        <strong>Latitude:</strong> 25.050078<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.520767,25.050078,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T20:45:49+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T20:55:57+08:00<br/>
+        <strong>Longtitude:</strong> 121.520778<br/>
+        <strong>Latitude:</strong> 25.050079<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.520778,25.050079,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T20:55:57+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T21:26:52+08:00<br/>
+        <strong>Longtitude:</strong> 121.522010<br/>
+        <strong>Latitude:</strong> 25.027478<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.522010,25.027478,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T21:26:52+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T21:37:00+08:00<br/>
+        <strong>Longtitude:</strong> 121.522041<br/>
+        <strong>Latitude:</strong> 25.027530<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.522041,25.027530,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T21:37:00+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T21:47:25+08:00<br/>
+        <strong>Longtitude:</strong> 121.522049<br/>
+        <strong>Latitude:</strong> 25.027400<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.522049,25.027400,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T21:47:25+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T21:57:49+08:00<br/>
+        <strong>Longtitude:</strong> 121.521999<br/>
+        <strong>Latitude:</strong> 25.027454<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.521999,25.027454,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T21:57:49+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T22:28:46+08:00<br/>
+        <strong>Longtitude:</strong> 121.522033<br/>
+        <strong>Latitude:</strong> 25.027484<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.522033,25.027484,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T22:28:46+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T22:49:07+08:00<br/>
+        <strong>Longtitude:</strong> 121.517426<br/>
+        <strong>Latitude:</strong> 25.046068<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.517426,25.046068,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T22:49:07+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T22:59:19+08:00<br/>
+        <strong>Longtitude:</strong> 121.518001<br/>
+        <strong>Latitude:</strong> 25.046012<br/>
+        <strong>GPS Accuracy:</strong> 35 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.518001,25.046012,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T22:59:19+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T23:09:35+08:00<br/>
+        <strong>Longtitude:</strong> 121.523056<br/>
+        <strong>Latitude:</strong> 25.050297<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.523056,25.050297,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T23:09:35+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-25T23:19:50+08:00<br/>
+        <strong>Longtitude:</strong> 121.525481<br/>
+        <strong>Latitude:</strong> 25.051099<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525481,25.051099,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-25T23:19:50+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T00:11:15+08:00<br/>
+        <strong>Longtitude:</strong> 121.525492<br/>
+        <strong>Latitude:</strong> 25.051090<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525492,25.051090,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T00:11:15+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T00:21:27+08:00<br/>
+        <strong>Longtitude:</strong> 121.525512<br/>
+        <strong>Latitude:</strong> 25.051091<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525512,25.051091,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T00:21:27+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T00:31:44+08:00<br/>
+        <strong>Longtitude:</strong> 121.525518<br/>
+        <strong>Latitude:</strong> 25.051119<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525518,25.051119,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T00:31:44+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T00:42:01+08:00<br/>
+        <strong>Longtitude:</strong> 121.525493<br/>
+        <strong>Latitude:</strong> 25.051106<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525493,25.051106,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T00:42:01+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T00:52:17+08:00<br/>
+        <strong>Longtitude:</strong> 121.525490<br/>
+        <strong>Latitude:</strong> 25.051104<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525490,25.051104,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T00:52:17+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T01:02:31+08:00<br/>
+        <strong>Longtitude:</strong> 121.525493<br/>
+        <strong>Latitude:</strong> 25.051104<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525493,25.051104,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T01:02:31+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T01:12:59+08:00<br/>
+        <strong>Longtitude:</strong> 121.525490<br/>
+        <strong>Latitude:</strong> 25.051107<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525490,25.051107,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T01:12:59+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T01:23:21+08:00<br/>
+        <strong>Longtitude:</strong> 121.525502<br/>
+        <strong>Latitude:</strong> 25.051098<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525502,25.051098,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T01:23:21+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T01:33:41+08:00<br/>
+        <strong>Longtitude:</strong> 121.525503<br/>
+        <strong>Latitude:</strong> 25.051097<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525503,25.051097,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T01:33:41+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T01:43:48+08:00<br/>
+        <strong>Longtitude:</strong> 121.525513<br/>
+        <strong>Latitude:</strong> 25.051080<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525513,25.051080,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T01:43:48+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T01:54:06+08:00<br/>
+        <strong>Longtitude:</strong> 121.525521<br/>
+        <strong>Latitude:</strong> 25.051067<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525521,25.051067,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T01:54:06+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T02:04:21+08:00<br/>
+        <strong>Longtitude:</strong> 121.525517<br/>
+        <strong>Latitude:</strong> 25.051067<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525517,25.051067,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T02:04:21+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T02:14:36+08:00<br/>
+        <strong>Longtitude:</strong> 121.525509<br/>
+        <strong>Latitude:</strong> 25.051074<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525509,25.051074,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T02:14:36+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T02:24:54+08:00<br/>
+        <strong>Longtitude:</strong> 121.525499<br/>
+        <strong>Latitude:</strong> 25.051084<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525499,25.051084,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T02:24:54+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T02:35:08+08:00<br/>
+        <strong>Longtitude:</strong> 121.525500<br/>
+        <strong>Latitude:</strong> 25.051083<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525500,25.051083,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T02:35:08+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T02:45:27+08:00<br/>
+        <strong>Longtitude:</strong> 121.525502<br/>
+        <strong>Latitude:</strong> 25.051085<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525502,25.051085,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T02:45:27+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T02:55:42+08:00<br/>
+        <strong>Longtitude:</strong> 121.525502<br/>
+        <strong>Latitude:</strong> 25.051088<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525502,25.051088,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T02:55:42+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T03:06:03+08:00<br/>
+        <strong>Longtitude:</strong> 121.525507<br/>
+        <strong>Latitude:</strong> 25.051085<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525507,25.051085,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T03:06:03+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T03:16:13+08:00<br/>
+        <strong>Longtitude:</strong> 121.525516<br/>
+        <strong>Latitude:</strong> 25.051079<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525516,25.051079,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T03:16:13+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T03:26:32+08:00<br/>
+        <strong>Longtitude:</strong> 121.525502<br/>
+        <strong>Latitude:</strong> 25.051098<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525502,25.051098,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T03:26:32+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T03:36:55+08:00<br/>
+        <strong>Longtitude:</strong> 121.525501<br/>
+        <strong>Latitude:</strong> 25.051098<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525501,25.051098,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T03:36:55+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T03:47:01+08:00<br/>
+        <strong>Longtitude:</strong> 121.525507<br/>
+        <strong>Latitude:</strong> 25.051093<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525507,25.051093,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T03:47:01+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T03:57:21+08:00<br/>
+        <strong>Longtitude:</strong> 121.525509<br/>
+        <strong>Latitude:</strong> 25.051091<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525509,25.051091,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T03:57:21+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T04:07:35+08:00<br/>
+        <strong>Longtitude:</strong> 121.525509<br/>
+        <strong>Latitude:</strong> 25.051088<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525509,25.051088,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T04:07:35+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T04:17:51+08:00<br/>
+        <strong>Longtitude:</strong> 121.525515<br/>
+        <strong>Latitude:</strong> 25.051079<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525515,25.051079,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T04:17:51+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T04:28:19+08:00<br/>
+        <strong>Longtitude:</strong> 121.525498<br/>
+        <strong>Latitude:</strong> 25.051089<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525498,25.051089,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T04:28:19+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T04:38:34+08:00<br/>
+        <strong>Longtitude:</strong> 121.525497<br/>
+        <strong>Latitude:</strong> 25.051089<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525497,25.051089,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T04:38:34+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T04:48:55+08:00<br/>
+        <strong>Longtitude:</strong> 121.525504<br/>
+        <strong>Latitude:</strong> 25.051083<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525504,25.051083,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T04:48:55+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T04:59:11+08:00<br/>
+        <strong>Longtitude:</strong> 121.525508<br/>
+        <strong>Latitude:</strong> 25.051081<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525508,25.051081,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T04:59:11+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T05:09:23+08:00<br/>
+        <strong>Longtitude:</strong> 121.525508<br/>
+        <strong>Latitude:</strong> 25.051082<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525508,25.051082,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T05:09:23+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T05:19:38+08:00<br/>
+        <strong>Longtitude:</strong> 121.525511<br/>
+        <strong>Latitude:</strong> 25.051082<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525511,25.051082,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T05:19:38+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T05:30:01+08:00<br/>
+        <strong>Longtitude:</strong> 121.525515<br/>
+        <strong>Latitude:</strong> 25.051075<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525515,25.051075,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T05:30:01+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T05:40:12+08:00<br/>
+        <strong>Longtitude:</strong> 121.525515<br/>
+        <strong>Latitude:</strong> 25.051076<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525515,25.051076,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T05:40:12+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T05:50:27+08:00<br/>
+        <strong>Longtitude:</strong> 121.525516<br/>
+        <strong>Latitude:</strong> 25.051075<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525516,25.051075,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T05:50:27+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T06:00:43+08:00<br/>
+        <strong>Longtitude:</strong> 121.525521<br/>
+        <strong>Latitude:</strong> 25.051071<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525521,25.051071,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T06:00:43+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T06:11:00+08:00<br/>
+        <strong>Longtitude:</strong> 121.525521<br/>
+        <strong>Latitude:</strong> 25.051071<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525521,25.051071,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T06:11:00+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T06:21:16+08:00<br/>
+        <strong>Longtitude:</strong> 121.525526<br/>
+        <strong>Latitude:</strong> 25.051069<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525526,25.051069,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T06:21:16+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T06:31:36+08:00<br/>
+        <strong>Longtitude:</strong> 121.525546<br/>
+        <strong>Latitude:</strong> 25.051049<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525546,25.051049,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T06:31:36+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T06:41:49+08:00<br/>
+        <strong>Longtitude:</strong> 121.525545<br/>
+        <strong>Latitude:</strong> 25.051050<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525545,25.051050,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T06:41:49+08:00</when>
+      </TimeStamp>
+    </Placemark>
+    <Placemark>
+      <name>g3mr-samson</name>
+      <description>
+        <![CDATA[
+        <strong>Email:</strong> f1c+96654979@careactive.ai<br/>
+        <strong>Device:</strong> g3mr-samson (80:6F:B0:7B:93:0E)<br/>
+        <strong>Scanned At:</strong> 2025-02-26T06:52:04+08:00<br/>
+        <strong>Longtitude:</strong> 121.525541<br/>
+        <strong>Latitude:</strong> 25.051054<br/>
+        <strong>GPS Accuracy:</strong> 0 meters<br/>
+        <strong>Phone:</strong> Samson iOS<br/>
+        ]]>
+      </description>
+      <styleUrl>#reasonCodeDefault</styleUrl>
+      <Point>
+        <coordinates>121.525541,25.051054,0</coordinates>
+      </Point>
+      <TimeStamp>
+        <when>2025-02-26T06:52:04+08:00</when>
+      </TimeStamp>
+    </Placemark>
+  </Document>
+</kml>
