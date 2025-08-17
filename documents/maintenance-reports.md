@@ -83,6 +83,10 @@ The second report focuses on checking the device's battery capacity and the volu
 | active_counts      | total number of the active rtls data entries (acvl was changed)                                  |
 | inactive_counts    | total number of the inactive rtls data entries                                                   |
 
+### Collection
+
+If this field shows "OFF", it means this device is paired with this family account but data collection is set to OFF. Please be aware that if collection is set to OFF in the middle of the day and some data has already been collected, this day is still considered as ON.
+
 ### Data Types
 
 | Type       | Description                                                   |
