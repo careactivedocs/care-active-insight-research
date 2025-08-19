@@ -113,6 +113,10 @@ family_id,family_name,collection,device_mac,bind_time,last_activity_time,device_
 F1C84864183,Samson Chen,,80:6F:B0:7B:93:0E,2025-02-06T09:47:06Z,2025-04-18T04:00:41Z,g3mr-samson:TPU,g3mr,15,rtls,21787,7064,14723
 ```
 
+## wifi_rssi -99 and battery -1
+
+It is a special case when wifi_rssi is -99 in the station maintenance report or battery is -1 in the device maintenance report. It means the station or the device has been unregistered from a family account but there was still data collected. This case usually happens on the first day of unregistration of a station or device. The other unusual case is when the post-processed data was manually rebuilt by the system admin.
+
 ## Revision History
 
 | Document Revision | Revision Date | Description                                                  | Note        |
