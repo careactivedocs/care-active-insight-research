@@ -31,10 +31,10 @@ If the GPS feature is enabled, the coordinates information are stored. Refer to 
 | config_timestamp       | The update time of geolocation config                                               |
 | inout_session          | Generated based on in_station_range status, e.g.: in-{timestamp} or out-{timestamp} |
 | travel_distance        | Distance in meters from the last reporting point                                    |
-| distance_from_base     | Distance from Base Point, e.g.: 1500                                                |
+| distance_from_base     | Distance in meters from Base Point, e.g.: 1500                                      |
 | matched_spot_id_1      | ID of the matched Target Spot, e.g.: spot002                                        |
 | matched_spot_name_1    | Name of the matched Target Spot, e.g.: Medical Clinic                               |
-| distance_from_spot_1   | Distance from the matched Target Spot, e.g.: 2                                      |
+| distance_from_spot_1   | Distance in meters from the matched Target Spot, e.g.: 2                            |
 | spot_session_1         | Spot Session, format: {spot_id}-{timestamp}, e.g.: spot002-3453452354235            |
 | matched_spot_id_{n}    | If there are more than 1 matched spot in the report                                 |
 | matched_spot_name_{n}  | If there are more than 1 matched spot in the report                                 |
