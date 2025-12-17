@@ -36,7 +36,6 @@ type Point struct {
 	Latitude       float64
 	Longitude      float64
 	GPSAccuracy    int
-	ReasonCode     int
 	PhoneName      string
 	SenderDeviceID string
 }
@@ -242,6 +241,8 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 
 	// Create a new CSV reader
 	reader := csv.NewReader(file)
+	// Allow variable number of fields per record (handles optional columns)
+	reader.FieldsPerRecord = -1
 
 	// Read the header row
 	header, err := reader.Read()
@@ -258,7 +259,7 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 	// Check for required columns
 	requiredColumns := []string{
 		"family_id", "device_name", "device_mac", "scanned_at_ms",
-		"gps_latitude", "gps_longitude", "gps_accuracy", "reason_code",
+		"gps_latitude", "gps_longitude", "gps_accuracy",
 		"phone_name", "sender_device_id",
 	}
 
@@ -306,16 +307,10 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 			continue
 		}
 
-		// Parse GPS accuracy and reason code
+		// Parse GPS accuracy
 		gpsAccuracy, err := strconv.Atoi(record[columnMap["gps_accuracy"]])
 		if err != nil {
 			fmt.Printf("Warning: Invalid GPS accuracy at line %d: %v, skipping...\n", lineNum, err)
-			continue
-		}
-
-		reasonCode, err := strconv.Atoi(record[columnMap["reason_code"]])
-		if err != nil {
-			fmt.Printf("Warning: Invalid reason code at line %d: %v, skipping...\n", lineNum, err)
 			continue
 		}
 
@@ -328,7 +323,6 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 			Latitude:       latitude,
 			Longitude:      longitude,
 			GPSAccuracy:    gpsAccuracy,
-			ReasonCode:     reasonCode,
 			PhoneName:      record[columnMap["phone_name"]],
 			SenderDeviceID: record[columnMap["sender_device_id"]],
 		}
@@ -362,7 +356,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 
 	// Add styles based on the mode
 	if pathMode {
-		// Add both path style and point styles for path mode
+		// Add both path style and point style for path mode
 		_, err = file.WriteString(`    <!-- Style for path lines -->
     <Style id="pathStyle">
       <LineStyle>
@@ -370,81 +364,27 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <width>4</width>
       </LineStyle>
     </Style>
-    
-    <!-- Styles for points in path mode -->
-    <Style id="reasonCode0">
+
+    <!-- Style for points in path mode -->
+    <Style id="pointStyle">
       <IconStyle>
         <color>ffffffff</color>
         <scale>0.7</scale>
         <Icon>
           <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="reasonCode1">
-      <IconStyle>
-        <color>ff00ff00</color>
-        <scale>0.7</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="reasonCode2">
-      <IconStyle>
-        <color>ff00ffff</color>
-        <scale>0.7</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="reasonCodeDefault">
-      <IconStyle>
-        <color>ffffff00</color>
-        <scale>0.7</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
       </IconStyle>
     </Style>
 `)
 	} else {
-		// Add point styles for placemark mode
-		_, err = file.WriteString(`    <!-- Styles for different reason codes -->
-    <Style id="reasonCode0">
+		// Add point style for placemark mode
+		_, err = file.WriteString(`    <!-- Style for points -->
+    <Style id="pointStyle">
       <IconStyle>
         <color>ffffffff</color>
         <scale>1.0</scale>
         <Icon>
           <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="reasonCode1">
-      <IconStyle>
-        <color>ff00ff00</color>
-        <scale>1.0</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="reasonCode2">
-      <IconStyle>
-        <color>ff00ffff</color>
-        <scale>1.0</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="reasonCodeDefault">
-      <IconStyle>
-        <color>ffffff00</color>
-        <scale>1.0</scale>
-        <Icon>
-          <href>http://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
         </Icon>
       </IconStyle>
     </Style>
@@ -505,16 +445,6 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 
 		// Always add individual points along the path (even if there's only one)
 		for i, point := range points {
-			styleID := "reasonCodeDefault"
-			switch point.ReasonCode {
-			case 0:
-				styleID = "reasonCode0"
-			case 1:
-				styleID = "reasonCode1"
-			case 2:
-				styleID = "reasonCode2"
-			}
-
 			placemark := fmt.Sprintf(`    <Placemark>
       <name>%s (Point %d)</name>
       <description>
@@ -528,7 +458,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <strong>Phone:</strong> %s<br/>
         ]]>
       </description>
-      <styleUrl>#%s</styleUrl>
+      <styleUrl>#pointStyle</styleUrl>
       <Point>
         <coordinates>%f,%f,0</coordinates>
       </Point>
@@ -546,7 +476,6 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 				point.Latitude,
 				point.GPSAccuracy,
 				point.PhoneName,
-				styleID,
 				point.Longitude,
 				point.Latitude,
 				point.ScannedAt.Format(time.RFC3339),
@@ -560,16 +489,6 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 	} else {
 		// Write each point as a placemark (original behavior)
 		for _, point := range points {
-			styleID := "reasonCodeDefault"
-			switch point.ReasonCode {
-			case 0:
-				styleID = "reasonCode0"
-			case 1:
-				styleID = "reasonCode1"
-			case 2:
-				styleID = "reasonCode2"
-			}
-
 			placemark := fmt.Sprintf(`    <Placemark>
       <name>%s</name>
       <description>
@@ -583,7 +502,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <strong>Phone:</strong> %s<br/>
         ]]>
       </description>
-      <styleUrl>#%s</styleUrl>
+      <styleUrl>#pointStyle</styleUrl>
       <Point>
         <coordinates>%f,%f,0</coordinates>
       </Point>
@@ -601,7 +520,6 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 				point.Latitude,
 				point.GPSAccuracy,
 				point.PhoneName,
-				styleID,
 				point.Longitude,
 				point.Latitude,
 				point.ScannedAt.Format(time.RFC3339),
