@@ -246,6 +246,7 @@ Data/ GPS Information of this location packet.
 | created_at_ttl   | Time-to-live in the location_log database                                             |
 | device_name      | The name of this watch in the location_log database                                   |
 | device_photo     | The image of the this watch in the location_log database                              |
+| geolocation      | Object of non-GPS geolocation report                                                  |
 | gps_accuracy     | GPS accuracy reported from the mobile                                                 |
 | gps_latitude     | GPS latitude                                                                          |
 | gps_longitude    | GPS longitude                                                                         |
@@ -256,6 +257,21 @@ Data/ GPS Information of this location packet.
 | sender_device_id | The mobile unique id                                                                  |
 | target_device_id | The serial number of the Watch                                                        |
 | user_id          | Cognito unique user id in the location_log database                                   |
+
+#### Geolocation Object
+
+| field               | descriptions                                                                |
+| :------------------ | :-------------------------------------------------------------------------- |
+| config_timestamp    | configuration used for this geolocation upload                              |
+| inout_session       | session id of this in-room or out-of-room status                            |
+| geolocation_gps     | whether GPS coordinator is provided or not                                  |
+| base_point_distance | distance from the base-point in meters if this feature is enabled           |
+| travel_distance     | distance from the kast reporting point in meters if this feature is enabled |
+| spots               | object arrays that contain the matched spots                                |
+| spots.id            | the matched spot id                                                         |
+| spots.name          | name of the matched spot                                                    |
+| spots.distance      | distance from the center of the matched in meters                           |
+| spots.spot_session  | staying session if of the matched spot                                      |
 
 ### Sample Location Data
 
@@ -277,6 +293,27 @@ Data/ GPS Information of this location packet.
             "created_at_ttl": 1731226578,
             "device_name": "G3MR-Samson",
             "device_photo": "https://portal.careactive.ai/img/sha256/2c5184c94be6f0137497cd788cc001ee14b9cafa7b819d2e98c6a058fca5cd5d.png",
+            "geolocation": {
+                "config_timestamp": 1765687304,
+                "inout_session": "out-1765443915221",
+                "geolocation_gps": true,
+                "base_point_distance": 62939,
+                "spots": [
+                    {
+                        "distance": 5,
+                        "id": "spot-ulid1",
+                        "name": "Community Center",
+                        "spot_session": "spot-ulid1-1765529185567"
+                    },
+                    {
+                        "distance": 20,
+                        "id": "spot-ulid2",
+                        "name": "Shopping Mall",
+                        "spot_session": "spot-ulid2-1765529208789"
+                    }
+                ],
+                "travel_distance": 67
+            },
             "gps_accuracy": 35,
             "gps_latitude": "23.610442333808496",
             "gps_longitude": "121.5287793121825",

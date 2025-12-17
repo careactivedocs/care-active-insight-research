@@ -15,19 +15,31 @@ Non-RTLS data types are also converted to CSV format.
 
 If the GPS feature is enabled, the coordinates information are stored. Refer to [Location GPS](./daily-source-data.md#location-gps) for more information.
 
-| field            | description                                           |
-| :--------------- | :---------------------------------------------------- |
-| family_id        | The family account email this watch was registered on |
-| device_name      | the name of the watch on CA Insight                   |
-| device_mac       | the MAC address of the watch                          |
-| scanned_at_ms    | Time that this pedo-beacon packet was scanned         |
-| scanned_at_utc   | Human format of scanned_at_ms                         |
-| gps_latitude     | GPS latitude                                          |
-| gps_longitude    | GPS longitude                                         |
-| gps_accuracy     | GPS accuracy reported from the mobile                 |
-| reason_code      | Reason Code reference in the location_log database    |
-| phone_name       | Name of the phone that reported this GPS record       |
-| sender_device_id | mobile unique-id for the database reference           |
+| field                  | description                                                                         |
+| :--------------------- | :---------------------------------------------------------------------------------- |
+| family_id              | The family account email this watch was registered on                               |
+| device_name            | the name of the watch on CA Insight                                                 |
+| device_mac             | the MAC address of the watch                                                        |
+| scanned_at_ms          | Time that this pedo-beacon packet was scanned                                       |
+| scanned_at_utc         | Human format of scanned_at_ms                                                       |
+| gps_latitude           | GPS latitude                                                                        |
+| gps_longitude          | GPS longitude                                                                       |
+| gps_accuracy           | GPS accuracy reported from the mobile                                               |
+| reason_code            | Reason Code reference in the location_log database                                  |
+| phone_name             | Name of the phone that reported this GPS record                                     |
+| sender_device_id       | mobile unique-id for the database reference                                         |
+| config_timestamp       | The update time of geolocation config                                               |
+| inout_session          | Generated based on in_station_range status, e.g.: in-{timestamp} or out-{timestamp} |
+| travel_distance        | Distance in meters from the last reporting point                                    |
+| distance_from_base     | Distance from Base Point, e.g.: 1500                                                |
+| matched_spot_id_1      | ID of the matched Target Spot, e.g.: spot002                                        |
+| matched_spot_name_1    | Name of the matched Target Spot, e.g.: Medical Clinic                               |
+| distance_from_spot_1   | Distance from the matched Target Spot, e.g.: 2                                      |
+| spot_session_1         | Spot Session, format: {spot_id}-{timestamp}, e.g.: spot002-3453452354235            |
+| matched_spot_id_{n}    | If there are more than 1 matched spot in the report                                 |
+| matched_spot_name_{n}  | If there are more than 1 matched spot in the report                                 |
+| distance_from_spot_{n} | If there are more than 1 matched spot in the report                                 |
+| spot_session_{n}       | If there are more than 1 matched spot in the report                                 |
 
 ### KML Location Data
 
