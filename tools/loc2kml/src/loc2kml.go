@@ -35,7 +35,7 @@ type Point struct {
 	ScannedAt      time.Time
 	Latitude       float64
 	Longitude      float64
-	GPSAccuracy    int
+	GPSAccuracy    float64
 	PhoneName      string
 	SenderDeviceID string
 }
@@ -308,7 +308,7 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 		}
 
 		// Parse GPS accuracy
-		gpsAccuracy, err := strconv.Atoi(record[columnMap["gps_accuracy"]])
+		gpsAccuracy, err := strconv.ParseFloat(record[columnMap["gps_accuracy"]], 64)
 		if err != nil {
 			fmt.Printf("Warning: Invalid GPS accuracy at line %d: %v, skipping...\n", lineNum, err)
 			continue
@@ -454,7 +454,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <strong>Scanned At:</strong> %s<br/>
         <strong>Longtitude:</strong> %f<br/>
         <strong>Latitude:</strong> %f<br/>
-        <strong>GPS Accuracy:</strong> %d meters<br/>
+        <strong>GPS Accuracy:</strong> %.2f meters<br/>
         <strong>Phone:</strong> %s<br/>
         ]]>
       </description>
@@ -498,7 +498,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <strong>Scanned At:</strong> %s<br/>
         <strong>Longtitude:</strong> %f<br/>
         <strong>Latitude:</strong> %f<br/>
-        <strong>GPS Accuracy:</strong> %d meters<br/>
+        <strong>GPS Accuracy:</strong> %.2f meters<br/>
         <strong>Phone:</strong> %s<br/>
         ]]>
       </description>
