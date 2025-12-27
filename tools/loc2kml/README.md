@@ -37,6 +37,9 @@ The location code of timezone is defined by IANA. Refer to the IANA tz database 
 
 The `-path` option generates a KML file with connected paths instead of individual placemarks. This is useful for visualizing the route taken by the device. If there is only one location in the CSV file, the path will be generated as a single point.
 
+## Sample Data
+`sample_input.csv` contains location data with Full GPS Log enabled, while `sample_input_2.csv` represents data with Full GPS Log disabled. Note that loc2kml cannot generate KML files from `sample_input_2.csv` format, but this is not treated as an error condition.
+
 ## How to View a KML file
 
 You can use [Google Earth](https://earth.google.com/web/) or [Google Earth Pro](https://www.google.com/earth/about/versions/) to view the KML file.

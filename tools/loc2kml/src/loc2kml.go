@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2025
+ * Copyright (c) 2026
  * Care Active Corp. ("CA").
  * All rights reserved.
  *
@@ -85,7 +85,7 @@ func formatFamilyAccount(email string) string {
 
 func main() {
 	// Print copyright message
-	fmt.Println("Location CSV to KML converter. Care Active Corp (c) 2025.")
+	fmt.Println("Location CSV to KML converter. Care Active Corp (c) 2026.")
 
 	// Define command line flags
 	inputDirPtr := flag.String("dir", "", "Directory containing CSV files")
@@ -179,21 +179,23 @@ func main() {
 
 	// Verify we have points to process
 	if len(points) == 0 {
-		fmt.Println("Error: No valid points found in any CSV files")
-		os.Exit(1)
-	}
+		fmt.Println("Info: No valid GPS points found in any CSV files")
 
-	// Generate KML file from points
-	err = generateKML(points, *outputFilePtr, *pathModePtr)
-	if err != nil {
-		fmt.Printf("Error generating KML file: %v\n", err)
-		os.Exit(1)
-	}
-
-	if *pathModePtr {
-		fmt.Printf("Successfully converted %d points to path in KML file: %s\n", len(points), *outputFilePtr)
+		// in GeoUpdate reports, it is possible no full GPS points are available, this is not an error
 	} else {
-		fmt.Printf("Successfully converted %d points to KML file: %s\n", len(points), *outputFilePtr)
+
+		// Generate KML file from points
+		err = generateKML(points, *outputFilePtr, *pathModePtr)
+		if err != nil {
+			fmt.Printf("Error generating KML file: %v\n", err)
+			os.Exit(1)
+		}
+
+		if *pathModePtr {
+			fmt.Printf("Successfully converted %d points to path in KML file: %s\n", len(points), *outputFilePtr)
+		} else {
+			fmt.Printf("Successfully converted %d points to KML file: %s\n", len(points), *outputFilePtr)
+		}
 	}
 }
 
