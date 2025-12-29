@@ -38,6 +38,8 @@ type Point struct {
 	GPSAccuracy    float64
 	PhoneName      string
 	SenderDeviceID string
+	SenderBattery  string
+	LocRefreshAt   *time.Time
 }
 
 // getDefaultOutputName returns the default KML output filename based on input
@@ -329,6 +331,19 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 			SenderDeviceID: record[columnMap["sender_device_id"]],
 		}
 
+		// Parse optional sender_battery field
+		if idx, ok := columnMap["sender_battery"]; ok && idx < len(record) && record[idx] != "" {
+			point.SenderBattery = record[idx]
+		}
+
+		// Parse optional loc_refresh_at_ms field
+		if idx, ok := columnMap["loc_refresh_at_ms"]; ok && idx < len(record) && record[idx] != "" {
+			if locRefreshMs, err := strconv.ParseInt(record[idx], 10, 64); err == nil {
+				locRefreshAt := time.Unix(locRefreshMs/1000, (locRefreshMs%1000)*1000000).In(loc)
+				point.LocRefreshAt = &locRefreshAt
+			}
+		}
+
 		points = append(points, point)
 	}
 
@@ -447,6 +462,15 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 
 		// Always add individual points along the path (even if there's only one)
 		for i, point := range points {
+			// Build optional fields
+			optionalFields := ""
+			if point.SenderBattery != "" {
+				optionalFields += fmt.Sprintf("        <strong>Sender Battery:</strong> %s<br/>\n", point.SenderBattery)
+			}
+			if point.LocRefreshAt != nil {
+				optionalFields += fmt.Sprintf("        <strong>Location Refresh At:</strong> %s<br/>\n", point.LocRefreshAt.Format(time.RFC3339))
+			}
+
 			placemark := fmt.Sprintf(`    <Placemark>
       <name>%s (Point %d)</name>
       <description>
@@ -458,7 +482,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <strong>Latitude:</strong> %f<br/>
         <strong>GPS Accuracy:</strong> %.2f meters<br/>
         <strong>Phone:</strong> %s<br/>
-        ]]>
+%s        ]]>
       </description>
       <styleUrl>#pointStyle</styleUrl>
       <Point>
@@ -478,6 +502,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 				point.Latitude,
 				point.GPSAccuracy,
 				point.PhoneName,
+				optionalFields,
 				point.Longitude,
 				point.Latitude,
 				point.ScannedAt.Format(time.RFC3339),
@@ -491,6 +516,15 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 	} else {
 		// Write each point as a placemark (original behavior)
 		for _, point := range points {
+			// Build optional fields
+			optionalFields := ""
+			if point.SenderBattery != "" {
+				optionalFields += fmt.Sprintf("        <strong>Sender Battery:</strong> %s<br/>\n", point.SenderBattery)
+			}
+			if point.LocRefreshAt != nil {
+				optionalFields += fmt.Sprintf("        <strong>Location Refresh At:</strong> %s<br/>\n", point.LocRefreshAt.Format(time.RFC3339))
+			}
+
 			placemark := fmt.Sprintf(`    <Placemark>
       <name>%s</name>
       <description>
@@ -502,7 +536,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
         <strong>Latitude:</strong> %f<br/>
         <strong>GPS Accuracy:</strong> %.2f meters<br/>
         <strong>Phone:</strong> %s<br/>
-        ]]>
+%s        ]]>
       </description>
       <styleUrl>#pointStyle</styleUrl>
       <Point>
@@ -522,6 +556,7 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 				point.Latitude,
 				point.GPSAccuracy,
 				point.PhoneName,
+				optionalFields,
 				point.Longitude,
 				point.Latitude,
 				point.ScannedAt.Format(time.RFC3339),
