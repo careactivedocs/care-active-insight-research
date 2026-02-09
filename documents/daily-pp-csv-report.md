@@ -29,6 +29,7 @@ If the GPS feature is enabled, the coordinates information are stored. Refer to 
 | phone_name             | Name of the phone that reported this GPS record                                     |
 | sender_device_id       | mobile unique-id for the database reference                                         |
 | sender_battery         | Battery level of the mobile device when this GPS location report was generated      |
+| report_counter         | Sequential number from zero for every beacon-awakened cloud event                   |
 | loc_refresh_at_ms      | Timestamp in milliseconds (EPOCH) when the GPS location was acquired by the mobile  |
 | config_timestamp       | The update time of geolocation config                                               |
 | inout_session          | Generated based on in_station_range status, e.g.: in-{timestamp} or out-{timestamp} |
