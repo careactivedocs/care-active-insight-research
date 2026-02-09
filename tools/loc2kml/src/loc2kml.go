@@ -39,6 +39,7 @@ type Point struct {
 	PhoneName      string
 	SenderDeviceID string
 	SenderBattery  string
+	ReportCounter  string
 	LocRefreshAt   *time.Time
 }
 
@@ -336,6 +337,11 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 			point.SenderBattery = record[idx]
 		}
 
+		// Parse optional report_counter field
+		if idx, ok := columnMap["report_counter"]; ok && idx < len(record) && record[idx] != "" {
+			point.ReportCounter = record[idx]
+		}
+
 		// Parse optional loc_refresh_at_ms field
 		if idx, ok := columnMap["loc_refresh_at_ms"]; ok && idx < len(record) && record[idx] != "" {
 			if locRefreshMs, err := strconv.ParseInt(record[idx], 10, 64); err == nil {
@@ -467,6 +473,9 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 			if point.SenderBattery != "" {
 				optionalFields += fmt.Sprintf("        <strong>Sender Battery:</strong> %s<br/>\n", point.SenderBattery)
 			}
+			if point.ReportCounter != "" {
+				optionalFields += fmt.Sprintf("        <strong>Report Counter:</strong> %s<br/>\n", point.ReportCounter)
+			}
 			if point.LocRefreshAt != nil {
 				optionalFields += fmt.Sprintf("        <strong>Location Refresh At:</strong> %s<br/>\n", point.LocRefreshAt.Format(time.RFC3339))
 			}
@@ -520,6 +529,9 @@ func generateKML(points []Point, outputPath string, pathMode bool) error {
 			optionalFields := ""
 			if point.SenderBattery != "" {
 				optionalFields += fmt.Sprintf("        <strong>Sender Battery:</strong> %s<br/>\n", point.SenderBattery)
+			}
+			if point.ReportCounter != "" {
+				optionalFields += fmt.Sprintf("        <strong>Report Counter:</strong> %s<br/>\n", point.ReportCounter)
 			}
 			if point.LocRefreshAt != nil {
 				optionalFields += fmt.Sprintf("        <strong>Location Refresh At:</strong> %s<br/>\n", point.LocRefreshAt.Format(time.RFC3339))
