@@ -27,6 +27,7 @@ If the GPS feature is enabled, the coordinates information are stored. Refer to 
 | gps_accuracy           | GPS accuracy reported from the mobile                                               |
 | reason_code            | Reason Code reference in the location_log database                                  |
 | phone_name             | Name of the phone that reported this GPS record                                     |
+| lock_state             | The device lock status observed at the moment the geo-report is generated           |
 | sender_device_id       | mobile unique-id for the database reference                                         |
 | sender_battery         | Battery level of the mobile device when this GPS location report was generated      |
 | report_counter         | Sequential number from zero for every beacon-awakened cloud event                   |
@@ -43,6 +44,20 @@ If the GPS feature is enabled, the coordinates information are stored. Refer to 
 | matched_spot_name_{n}  | If there are more than 1 matched spot in the report                                 |
 | distance_from_spot_{n} | If there are more than 1 matched spot in the report                                 |
 | spot_session_{n}       | If there are more than 1 matched spot in the report                                 |
+
+### Phone Screen Lock State
+
+`lock_state` reports the device lock status observed at the moment the geolocation
+report is generated. Reports are beacon-triggered at a fixed interval, so `lock_state`
+is a periodic sample of the lock status, not an event stream. It is carried
+alongside other geolocation information and does not itself trigger a report,
+so it has no effect on `report_counter`.
+
+| Value        | Meaning                                              |
+| :----------- | :--------------------------------------------------- |
+| `"locked"`   | Device is locked at sample time                      |
+| `"unlocked"` | Device is unlocked at sample time                    |
+| `"no-lock"`  | Lock state is not meaningful or not yet determinable |
 
 ### KML Location Data
 
