@@ -274,6 +274,16 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 		}
 	}
 
+	// field returns the value of a named column for the current record, or ""
+	// if the record is shorter than the header. Unknown columns are ignored,
+	// so new fields added to the report format never affect this tool.
+	field := func(record []string, name string) string {
+		if idx, ok := columnMap[name]; ok && idx < len(record) {
+			return record[idx]
+		}
+		return ""
+	}
+
 	// Process each row
 	var points []Point
 	lineNum := 1 // Start from 1 to account for header
@@ -290,7 +300,7 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 		}
 
 		// Parse timestamp
-		scannedAtMs, err := strconv.ParseInt(record[columnMap["scanned_at_ms"]], 10, 64)
+		scannedAtMs, err := strconv.ParseInt(field(record, "scanned_at_ms"), 10, 64)
 		if err != nil {
 			fmt.Printf("Warning: Invalid timestamp at line %d: %v, skipping...\n", lineNum, err)
 			continue
@@ -299,21 +309,28 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 		// Convert milliseconds to time.Time
 		scannedAt := time.Unix(scannedAtMs/1000, (scannedAtMs%1000)*1000000).In(loc)
 
+		// Rows without GPS coordinates (e.g. GeoUpdate without a fix) are
+		// expected; skip them silently.
+		latStr, lonStr := field(record, "gps_latitude"), field(record, "gps_longitude")
+		if latStr == "" || lonStr == "" {
+			continue
+		}
+
 		// Parse latitude and longitude
-		latitude, err := strconv.ParseFloat(record[columnMap["gps_latitude"]], 64)
+		latitude, err := strconv.ParseFloat(latStr, 64)
 		if err != nil {
 			fmt.Printf("Warning: Invalid latitude at line %d: %v, skipping...\n", lineNum, err)
 			continue
 		}
 
-		longitude, err := strconv.ParseFloat(record[columnMap["gps_longitude"]], 64)
+		longitude, err := strconv.ParseFloat(lonStr, 64)
 		if err != nil {
 			fmt.Printf("Warning: Invalid longitude at line %d: %v, skipping...\n", lineNum, err)
 			continue
 		}
 
 		// Parse GPS accuracy
-		gpsAccuracy, err := strconv.ParseFloat(record[columnMap["gps_accuracy"]], 64)
+		gpsAccuracy, err := strconv.ParseFloat(field(record, "gps_accuracy"), 64)
 		if err != nil {
 			fmt.Printf("Warning: Invalid GPS accuracy at line %d: %v, skipping...\n", lineNum, err)
 			continue
@@ -321,30 +338,30 @@ func processCSVFile(filePath string, loc *time.Location) ([]Point, error) {
 
 		// Create a new point
 		point := Point{
-			FamilyAccount:  formatFamilyAccount(record[columnMap["family_id"]]),
-			DeviceName:     record[columnMap["device_name"]],
-			DeviceMAC:      record[columnMap["device_mac"]],
+			FamilyAccount:  formatFamilyAccount(field(record, "family_id")),
+			DeviceName:     field(record, "device_name"),
+			DeviceMAC:      field(record, "device_mac"),
 			ScannedAt:      scannedAt,
 			Latitude:       latitude,
 			Longitude:      longitude,
 			GPSAccuracy:    gpsAccuracy,
-			PhoneName:      record[columnMap["phone_name"]],
-			SenderDeviceID: record[columnMap["sender_device_id"]],
+			PhoneName:      field(record, "phone_name"),
+			SenderDeviceID: field(record, "sender_device_id"),
 		}
 
 		// Parse optional sender_battery field
-		if idx, ok := columnMap["sender_battery"]; ok && idx < len(record) && record[idx] != "" {
-			point.SenderBattery = record[idx]
+		if v := field(record, "sender_battery"); v != "" {
+			point.SenderBattery = v
 		}
 
 		// Parse optional report_counter field
-		if idx, ok := columnMap["report_counter"]; ok && idx < len(record) && record[idx] != "" {
-			point.ReportCounter = record[idx]
+		if v := field(record, "report_counter"); v != "" {
+			point.ReportCounter = v
 		}
 
 		// Parse optional loc_refresh_at_ms field
-		if idx, ok := columnMap["loc_refresh_at_ms"]; ok && idx < len(record) && record[idx] != "" {
-			if locRefreshMs, err := strconv.ParseInt(record[idx], 10, 64); err == nil {
+		if v := field(record, "loc_refresh_at_ms"); v != "" {
+			if locRefreshMs, err := strconv.ParseInt(v, 10, 64); err == nil {
 				locRefreshAt := time.Unix(locRefreshMs/1000, (locRefreshMs%1000)*1000000).In(loc)
 				point.LocRefreshAt = &locRefreshAt
 			}
