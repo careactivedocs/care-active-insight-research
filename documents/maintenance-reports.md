@@ -1,6 +1,6 @@
 # Maintenance Reports
 
-The maintenance reports are generated daily at 00:35 UTC. This report helps identify the status of all registered devices, including their connectivity and battery levels. This single report contains information about all the devices under the same collector ID for easy reference. There are two types of reports, station report and sensor device report.
+The maintenance reports are generated once a day, as part of the Final daily processing run (approximately 13:20 UTC on the following day). Refer to [Data Processing Time](data-processing-time.md) for the full data availability schedule. This report helps identify the status of all registered devices, including their connectivity and battery levels. This single report contains information about all the devices under the same collector ID for easy reference. There are two types of reports, station report and sensor device report.
 
 ## File Location
 

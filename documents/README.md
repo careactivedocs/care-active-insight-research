@@ -25,6 +25,7 @@ This tool kits are for the researchers to handle the G3MR data including the Act
 
 | Tools/Documents                                             | Descriptions                                       |
 | :---------------------------------------------------------- | :------------------------------------------------- |
+| [Data Processing Time](./data-processing-time.md)           | When Quick Access and Final data become available  |
 | [Maintenance data](./maintenance-reports.md)                | Daily list of the status of all registered devices |
 | [Device name logs](./device-name-logs.md)                   | Device name change logs                            |
 | [Daily rtls-activity data](./daily-rtls-activity-report.md) | Daily RTLS Activity data                           |

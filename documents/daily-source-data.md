@@ -251,9 +251,12 @@ Data/ GPS Information of this location packet.
 | gps_latitude     | GPS latitude                                                                          |
 | gps_longitude    | GPS longitude                                                                         |
 | id               | The unique id of the record in the location_log database                              |
+| lock_state       | The device lock status observed when this record was generated. Optional, may be empty. Refer to [Phone Screen Lock State](./daily-pp-csv-report.md#phone-screen-lock-state) |
 | reason_code      | Reason Code reference in the location_log database                                    |
 | reason_data      | Associate reason data in the location_log database                                    |
+| report_counter   | Sequential number from zero for every beacon-awakened cloud event                     |
 | scaned_at        | The EPOCH-ms of when the Pedo-Beacon was received on the mobile (mobile time)         |
+| sender_battery   | Battery level of the mobile device when this record was generated                     |
 | sender_device_id | The mobile unique id                                                                  |
 | target_device_id | The serial number of the Watch                                                        |
 | user_id          | Cognito unique user id in the location_log database                                   |
@@ -263,6 +266,7 @@ Data/ GPS Information of this location packet.
 | field               | descriptions                                                                |
 | :------------------ | :-------------------------------------------------------------------------- |
 | config_timestamp    | configuration used for this geolocation upload                              |
+| loc_refresh_at_ms   | Timestamp in milliseconds (EPOCH) when the GPS location was acquired by the mobile |
 | inout_session       | session id of this in-room or out-of-room status                            |
 | geolocation_gps     | whether GPS coordinator is provided or not                                  |
 | base_point_distance | distance from the base-point in meters if this feature is enabled           |
@@ -295,6 +299,7 @@ Data/ GPS Information of this location packet.
             "device_photo": "https://portal.careactive.ai/img/sha256/2c5184c94be6f0137497cd788cc001ee14b9cafa7b819d2e98c6a058fca5cd5d.png",
             "geolocation": {
                 "config_timestamp": 1765687304,
+                "loc_refresh_at_ms": 1726042570000,
                 "inout_session": "out-1765443915221",
                 "geolocation_gps": true,
                 "base_point_distance": 62939,
@@ -318,11 +323,14 @@ Data/ GPS Information of this location packet.
             "gps_latitude": "23.610442333808496",
             "gps_longitude": "121.5287793121825",
             "id": "689a2cea-fa0d-40f0-8ba0-aa71dc07a73a",
+            "lock_state": "unlocked",
             "reason_code": 11,
             "reason_data": {
                 "phone_name": "O2LAND"
             },
+            "report_counter": 42,
             "scaned_at": 1726042576755,
+            "sender_battery": 85,
             "sender_device_id": "71B1657E-1881-47C6-B097-D0E044742C5B",
             "target_device_id": "4C126812",
             "user_id": "samson@qblinks.com:tracmo"
@@ -402,3 +410,4 @@ CVL is Collected Vector Length to measure the motion intensity. Please refer to 
 | :---------------: | :-----------: | --------------------- | ---- |
 |        1.0        |  2024-09-12   | Init Version          |      |
 |        2.0        |  2025-03-11   | Data Format Version 2 |      |
+|        2.1        |  2026-10-01   | Add lock_state, report_counter, sender_battery, and loc_refresh_at_ms to the Location payload |      |
