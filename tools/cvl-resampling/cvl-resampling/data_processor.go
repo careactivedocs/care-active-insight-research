@@ -29,10 +29,11 @@ type DataProcessor struct {
 	gapLimit    int64
 	rssiLimit   int64
 	verbose     bool // Controls progress reporting
+	partial     bool // Input covers only part of the day; skip the end-of-day empty-record fill
 }
 
 // NewDataProcessor creates a new DataProcessor instance.
-func NewDataProcessor(rssiColumns []string, gapLimit, rssiLimit int64, verbose bool) (*DataProcessor, error) {
+func NewDataProcessor(rssiColumns []string, gapLimit, rssiLimit int64, verbose, partial bool) (*DataProcessor, error) {
 	// Validate that rssiLimit >= gapLimit
 	if rssiLimit < gapLimit {
 		return nil, fmt.Errorf("rssiLimit (%d) must be greater than or equal to gapLimit (%d)", rssiLimit, gapLimit)
@@ -43,6 +44,7 @@ func NewDataProcessor(rssiColumns []string, gapLimit, rssiLimit int64, verbose b
 		gapLimit:    gapLimit,
 		rssiLimit:   rssiLimit,
 		verbose:     verbose,
+		partial:     partial,
 	}, nil
 }
 
@@ -590,20 +592,26 @@ func (p *DataProcessor) formatResampledData(resampledPoints []ResampledPoint, he
 		formattedData = append(formattedData, record)
 	}
 
-	// Always fill the remaining day with empty records
-	// get the EPOCH value of the last second of the day
-	lastResampleAtTime := time.Unix(lastResampleAt, 0).UTC()
-	lastResampleAtTime = time.Date(lastResampleAtTime.Year(), lastResampleAtTime.Month(), lastResampleAtTime.Day(), 23, 59, 59, 0, time.UTC)
-	lastResampleAtEnd := lastResampleAtTime.Unix()
+	// Fill the remaining day with empty records, unless the input only covers part of
+	// the day (-partial): the hours after the last real reading haven't happened yet,
+	// so they must not be padded with records that read as "no signal."
+	if !p.partial {
+		// get the EPOCH value of the last second of the day
+		lastResampleAtTime := time.Unix(lastResampleAt, 0).UTC()
+		lastResampleAtTime = time.Date(lastResampleAtTime.Year(), lastResampleAtTime.Month(), lastResampleAtTime.Day(), 23, 59, 59, 0, time.UTC)
+		lastResampleAtEnd := lastResampleAtTime.Unix()
 
-	// Progress reporting
-	if p.verbose && lastResampleAtEnd > lastResampleAt {
-		fmt.Printf("Filling %d empty records to end of day...\n", lastResampleAtEnd-lastResampleAt)
-	}
+		// Progress reporting
+		if p.verbose && lastResampleAtEnd > lastResampleAt {
+			fmt.Printf("Filling %d empty records to end of day...\n", lastResampleAtEnd-lastResampleAt)
+		}
 
-	// generate empty records from the last resample point to the end of the day
-	for emptyTimer := lastResampleAt + 1; emptyTimer <= lastResampleAtEnd; emptyTimer++ {
-		formattedData = append(formattedData, p.generateEmptyRecord(resampledPoints[len(resampledPoints)-1], emptyTimer))
+		// generate empty records from the last resample point to the end of the day
+		for emptyTimer := lastResampleAt + 1; emptyTimer <= lastResampleAtEnd; emptyTimer++ {
+			formattedData = append(formattedData, p.generateEmptyRecord(resampledPoints[len(resampledPoints)-1], emptyTimer))
+		}
+	} else if p.verbose {
+		fmt.Println("Skipping end-of-day empty-record fill (-partial): input covers only part of the day")
 	}
 
 	return formattedData

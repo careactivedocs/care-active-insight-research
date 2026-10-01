@@ -1,6 +1,6 @@
 # CVL Resampling Tool
 
-A tool that resamples RSSI and ACVL time-series data into 1-second intervals using linear interpolation. It ensures full 24-hour coverage by creating empty records for gaps between resampling sections.
+A tool that resamples RSSI and ACVL time-series data into 1-second intervals using linear interpolation. It ensures full 24-hour coverage by creating empty records for gaps between resampling sections, unless `-partial` is used to indicate the input only covers part of a still-in-progress day.
 
 ## Purpose
 
@@ -26,6 +26,7 @@ The CVL Resampling Tool processes raw time-series data collected from RTLS (Real
 - `-gaplimit` (optional): Maximum time gap in milliseconds allowed for interpolation (default: 30000)
 - `-rssilimit` (optional): Maximum time gap in milliseconds allowed for RSSI signal interpolation (default: 30000)
 - `-verbose` (optional): Enable verbose output for debugging purposes
+- `-partial` (optional): Input covers only part of the day (e.g. an intraday/"latest" run that hasn't reached end of day yet). Skips filling the remainder of the day with synthetic empty records, since those hours haven't happened yet rather than having no signal. Without this flag (default), the tool always pads output through 23:59:59 of the day, which is only correct when the input represents a complete day.
 
 #### gaplimit and rssilimit
 

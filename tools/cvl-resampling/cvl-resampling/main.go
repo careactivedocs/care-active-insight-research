@@ -31,6 +31,7 @@ var (
 	gapLimit   = flag.Int64("gaplimit", 30000, "Gap limit in milliseconds")
 	rssiLimit  = flag.Int64("rssilimit", 30000, "RSSI limit in milliseconds")
 	verbose    = flag.Bool("verbose", false, "Enable verbose progress reporting (default: false)")
+	partial    = flag.Bool("partial", false, "Input covers only part of the day (e.g. an intraday/latest run); skip filling the remainder of the day with empty records (default: false)")
 )
 
 func main() {
@@ -81,7 +82,7 @@ func main() {
 
 	// Process the data
 	fmt.Println("Creating data processor...")
-	processor, err := NewDataProcessor(rssiColumns, *gapLimit, *rssiLimit, *verbose)
+	processor, err := NewDataProcessor(rssiColumns, *gapLimit, *rssiLimit, *verbose, *partial)
 	if err != nil {
 		log.Fatalf("Error creating data processor: %v", err)
 	}
