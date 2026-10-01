@@ -38,6 +38,10 @@ Care Active Watches, Stations, and the mobile app queue and forward activity, lo
   - Billing data
 - The following day's Final run fully supersedes any Quick Access snapshots for that day.
 
+### How to Tell Quick Access Data from Final Data
+
+Quick Access files are written to the exact same file location and filename pattern as Final data (see [Daily RTLS-Activity Report](daily-rtls-activity-report.md#file-location) and [Daily Post-Processed Data](daily-pp-csv-report.md#file-location)) — there is no separate folder or filename marker for Quick Access. Instead, go by the date in the file path/filename: Final data for a given UTC day is only ever generated on the *next* calendar day, so a file is never finalized on the same UTC date it covers. This means any file dated with today's UTC date is necessarily Quick Access data.
+
 ## Schedule Summary (UTC)
 
 | Time (UTC)                                        | Event                                                          |
@@ -51,3 +55,4 @@ Care Active Watches, Stations, and the mobile app queue and forward activity, lo
 | :----------------: | :-----------: | ---------------- | ---- |
 |        1.0         |  2026-10-01   | Initial version  |      |
 |        1.1         |  2026-10-01   | Clarified that Quick Access includes location/pedo/motion CSV reports, not just RTLS-Activity; only KML, maintenance, and billing are Final-only |      |
+|        1.2         |  2026-10-01   | Added note on how to tell Quick Access files from Final files by date |      |
