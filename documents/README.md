@@ -69,7 +69,13 @@ Pedometer type of messages are the pedometer readings for the station. This mess
 
 #### Pedo-Beacon
 
-Pedo-Beacon message is an Apple iBeacon format message that embeds the pedometer readings. If a nearby mobile device has the Care Active App installed with location permission granted, the pedo-beacon message can trigger the mobile app to report the GPS location to the Care Active Cloud. If the GPS feature is enabled, the GPS data will be logged in the cloud. Otherwise, this GPS information will be discarded.
+Pedo-Beacon message is an Apple iBeacon format message that embeds the pedometer readings. If a nearby mobile device has the Care Active App installed with location permission granted, the pedo-beacon message can trigger the mobile app to read the phone's location. The location is processed on the phone, based on the geolocation features enabled for the property:
+
+- Target places: the app checks the location against the places pre-specified by the researcher.
+- Distance tracking: the app computes the distance from the base point.
+- Travel distance: the app computes the distance travelled.
+
+Detailed GPS coordinates are dropped on the phone before the processed data is uploaded to the Care Active Cloud. Coordinates are uploaded only when the GPS feature is enabled for the property.
 
 ### Local Time Conversion
 
